@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Tracker</title>
+    <script type='text/javascript' src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Power Tracker</h1>
+    </header>
+    <section class="mainContent">
+        <div class="flexBox">
+            <div class="form">
+                <form action="#">
+                <label for="applianceName">Applicance Name: </label>
+                <input type="text" id='name'> 
+                <label for="appliancecount">No.of # used: </label>
+                <select id="noOfItems">
+                <option value="0">--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                </select>
+                <label for="perDay">Item used Hrs per day: </label>
+                <select id="hrsPerDay">
+                <option value="0">--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                </select>
+                <label for="perHour">units consumption per Hour: </label>
+                <input type="float" id='unitsPerDay'>
+                <button id='reset' type="reset">reset</button>
+                <button onclick=submitBtn()>submit</button>
+                <p id='error'></p>
+                </form>
+            </div>
+            <div class=tabelPerday>
+            <table class="table" border="1px">
+                <thead>
+                    <th>S.No</th>
+                    <th>Applicance Name</th>
+                    <th>Applicance Count</th>
+                    <th> Units Per/Hour</th>
+                    <th> Units per/Day</th>
+                </thead>
+                <tbody class='tbody'>
+
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+        <div class="displayBox">
+           <div class="perDayUnits">
+                <h3>Total Units consumption per day:</h3>
+                <p id='perDay'></p>
+            </div>
+            <div class="perMonthUnits">
+                <h3>Total Units consumption per Month:</h3>
+                <p id='perMonth'></p>
+            </div>
+            <div class="costMonthUnits">
+                <h3>Total Bill Amount per Month:</h3>
+                <p id='costPerMonth'></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copy Right @ Ninjas Online</p>
+    </footer>
+</body>
+</html>

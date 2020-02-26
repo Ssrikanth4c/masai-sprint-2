@@ -1,0 +1,77 @@
+body{
+    background-color: #9E9E9E;
+    text-align: center;
+}
+header, footer{
+    background-color: slateblue;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+header> h1{
+    font-family: 'Trade Winds' ;
+    text-align: left;
+}
+label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#error{
+    color: red;
+}
+.flexBox{
+    margin: 40px 100px;
+    display: flex;
+    gap: 20px 100px;
+    justify-content: center;
+}
+form{
+    background-color: rosybrown;
+    border-radius: 60px/30px;
+    padding: 20px;
+    border: 2px solid red;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+ th{
+    padding: 10px;
+}
+#noOfItems, #hrsPerDay,#name, #unitsPerDay{
+    padding: 5px;
+    border-radius: 5px;
+}
+.displayBox  p{
+    font-family: 'Trade Winds' ;
+    font-size: 20px;
+    color: #E91E63;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:slateblue;
+    font-family: cursive;
+    font-size: 20px;
+}
+.tabelPerday{
+    color: white;
+    padding: 40px;
+    border-radius: 60px/30px;
+    background-image: url("https://images.unsplash.com/photo-1567772152689-2b14d7e1a56e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80");
+    background-size: cover;
+}
+.unitsPerDay{
+    background-color: green;
+    padding: 5px;
+}
+
+
+@media (max-width: 768px){
+    .flexBox{
+        flex-direction: column;
+    }
+}
+@media (max-width: 600px){
+    .flexBox{
+        flex-direction: column;
+    }
+}
